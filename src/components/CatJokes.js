@@ -99,7 +99,7 @@ function CatJokes() {
           <p>No joke available</p>
         )}
       </div>
-      <button onClick={handleNewJokeClick}>Get New Joke</button>
+      <button onClick={handleNewJokeClick}>Click To Get New Joke</button>
     </div>
   );
 }
