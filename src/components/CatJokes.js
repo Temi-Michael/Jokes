@@ -68,7 +68,7 @@ function CatJokes() {
 
   const fetchJoke = () => {
     setLoading(true);
-    fetch("https://official-joke-api.appspot.com/random_joke")
+    fetch("https://official-joke-api.appspot.com/jokes/random")
       .then((response) => response.json())
       .then((data) => {
         setJoke(data);
