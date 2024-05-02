@@ -1,5 +1,11 @@
 .App {
   text-align: center;
+  background-color: purple;
+  width: 400px;
+  border-radius: 10px;
+  margin: auto;
+  color: gold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .App-logo {
@@ -37,9 +43,7 @@
   }
 }
 
-.JokeCard {
-  width: 400px;
-  height: 150px;
-  border-radius: 10px;
-  border: 3px dotted grey;
+
+.App button {
+  margin-bottom: 20px;
 }

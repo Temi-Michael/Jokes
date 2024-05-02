@@ -50,10 +50,11 @@
 // }
 
 import React, { useEffect, useState } from "react";
+import "../App.css"
 
 function JokeCard({ joke }) {
   return (
-    <div className="JokeCard">
+    <div className="App">
       <div className="JokeContent">
         <p className="Joke">{joke.setup}</p>
         <p className="Punchline">{joke.punchline}</p>
@@ -89,12 +90,12 @@ function CatJokes() {
   };
 
   return (
-    <div>
+    <div className="App">
       <div>
         {loading ? (
           <p>Joke Loading...😂😂</p>
         ) : joke ? (
-          <JokeCard joke={joke} />
+          <JokeCard joke={joke} className="jokelist"/>
         ) : (
           <p>No joke available</p>
         )}
