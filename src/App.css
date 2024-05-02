@@ -1,11 +1,22 @@
 .App {
   text-align: center;
   background-color: purple;
-  width: 30%;
   border-radius: 10px;
   margin: auto;
   color: gold;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media screen and (max-width:500px) {
+  .App {
+    width: 90vw;
+  }
+}
+
+@media screen and (min-width:500px) {
+  .App {
+    width: 40%;
+  }
 }
 
 .App-header {
@@ -31,8 +42,4 @@ button {
   height: 40px;
   border-radius: 10px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.Jokes {
-  margin-top: 50px;
 }
