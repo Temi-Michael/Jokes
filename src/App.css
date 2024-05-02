@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+.JokeCard {
+  width: 400px;
+  height: 150px;
+  border-radius: 10px;
+  border: 3px dotted grey;
+}
