@@ -54,7 +54,7 @@ import "../App.css"
 
 function JokeCard({ joke }) {
   return (
-    <div className="App">
+    <div className="AppJokes">
       <div className="JokeContent">
         <p className="Joke">{joke.setup}</p>
         <p className="Punchline">{joke.punchline}</p>
@@ -69,7 +69,7 @@ function CatJokes() {
 
   const fetchJoke = () => {
     setLoading(true);
-    fetch("https://official-joke-api.appspot.com/jokes/random")
+    fetch("https://official-joke-api.appspot.com/random_joke")
       .then((response) => response.json())
       .then((data) => {
         setJoke(data);
@@ -90,8 +90,8 @@ function CatJokes() {
   };
 
   return (
-    <div className="App">
-      <div>
+    <div className="AppCard">
+      <div className="Jokes">
         {loading ? (
           <p>Joke Loading...😂😂</p>
         ) : joke ? (
